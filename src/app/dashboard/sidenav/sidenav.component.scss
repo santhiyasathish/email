@@ -1,0 +1,52 @@
+.newmail{
+    padding: 5px 10px;
+    background: #FF844B;
+    color: #f1f6fa;
+    box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+    border-radius: 10px;
+    display: flex;
+    border:1px solid #FF844B;
+    margin: auto;
+}
+.btn_content{
+    margin: auto;
+}
+.list{
+    width:80%;
+    margin:auto;
+    padding:10px 0px;
+    mat-list-item{
+        cursor: pointer;
+        color:#6F96AA;
+    }
+}     
+.active{
+    background: #FFFFFF;
+    color:#FF844B !important;
+/* Shadow */
+
+box-shadow: 0px 16px 25px rgba(78, 125, 150, 0.1);
+border-radius: 10px;
+}   
+
+.activelable{
+    mat-icon{
+        color:#FF844B !important;
+    }
+}
+.label{
+    mat-icon{
+        color:#3cc2e0;
+    }
+}
+
+.lable{
+    width:80%;
+    margin:auto;
+    padding:10px 0px;
+    mat-list-item{
+        width: 100%;
+        cursor: pointer;
+        color:#6F96AA;
+    }
+}      

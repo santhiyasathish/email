@@ -1,0 +1,15 @@
+<div class="cont">
+    <div class="logo">
+        <div class="in">
+            <div class="or1">
+
+            </div>
+            <div class="or2">
+                
+            </div>
+        </div>
+    </div>
+    <div class="menu" *ngFor="let data of menuList" [class.active]="data.icon == selected">
+        <mat-icon (click)="selectMenu(data.icon)">{{data.icon}}</mat-icon>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<button mat-button class="newmail">
+    <mat-icon>add</mat-icon>
+    <div class="btn_content">
+        New Mail
+    </div>
+</button>
+<div class="list">
+    <mat-list>
+        <mat-list-item [class.active]="'inbox' == selected" (click)="selectOption('inbox')"> <mat-icon>inbox</mat-icon>&nbsp;Inbox <ng-container *ngIf="count.inbox > 0">{{count?.inbox}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'send' == selected" (click)="selectOption('send')"> <mat-icon>send</mat-icon>&nbsp;Sent <ng-container *ngIf="count.sent > 0">{{count?.sent}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'fav' == selected" (click)="selectOption('fav')"> <mat-icon>star_border</mat-icon>&nbsp;Favourite <ng-container *ngIf="count.favourite > 0">{{count?.favourite}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'draft' == selected" (click)="selectOption('draft')"> <mat-icon>drafts</mat-icon>&nbsp;Draft <ng-container *ngIf="count.draft > 0">{{count?.draft}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'important' == selected" (click)="selectOption('important')"> <mat-icon>label_important</mat-icon>&nbsp;Important <ng-container *ngIf="count.important > 0">{{count?.important}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'schedule' == selected" (click)="selectOption('schedule')"> <mat-icon>schedule</mat-icon>&nbsp;Scheduled <ng-container *ngIf="count.schedule > 0">{{count?.schedule}}</ng-container></mat-list-item>
+        <mat-list-item [class.active]="'more' == selected" (click)="selectOption('more')"> <mat-icon>expand_more</mat-icon>&nbsp;More</mat-list-item>
+
+       </mat-list>
+</div>
+<div class="lable">
+    <div><b>Labels</b></div>
+    <mat-list>
+        <mat-list-item class="label" [class.activelable]="'work' == selectedLable" (click)="selectLable('work')"> <mat-icon>panorama_fish_eye</mat-icon>&nbsp;Work</mat-list-item>
+        <mat-list-item class="label" [class.activelable]="'project' == selectedLable" (click)="selectLable('project')"> <mat-icon>panorama_fish_eye</mat-icon>&nbsp;Side projects</mat-list-item>
+    </mat-list>
+</div>

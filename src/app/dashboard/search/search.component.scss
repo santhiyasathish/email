@@ -1,0 +1,18 @@
+.search_input{
+    width:calc(100% - 20px);
+    padding:10px;
+    position: relative;
+    input{
+        background: #FFFFFF;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ffffff;
+    }
+    mat-icon{
+        color: #FF844B;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+    }
+}

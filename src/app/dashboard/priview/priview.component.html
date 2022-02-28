@@ -1,0 +1,97 @@
+<div class="w-100">
+    <div class="headers">
+        <div class="email-text">
+            <b>Preview</b>
+        </div>
+        <div class="top_menu f-right">
+         <div class="menu_in">
+            <div class="icons">
+                <mat-icon (click)="action('d')">delete_outline</mat-icon>
+                <mat-icon >maximize</mat-icon>
+                <mat-icon>cancel</mat-icon>
+            </div>
+            </div>
+            </div>
+    </div>
+    <div class="headers">
+        <div class="email-text">
+            <b>Typography assets</b>
+            <div class="desc">Today march, 30th 2021, 10:12 AM</div>
+        </div>
+        <div class="top_menu f-right">
+         <div class="menu_in">
+            <div class="icons">
+                <mat-icon (click)="action('f');fav(b)">
+                    <ng-container> star_border</ng-container>
+                    <!-- <ng-container *ngIf="b == false">star_border</ng-container> -->
+                </mat-icon>
+                <!-- <mat-icon (click)="action('uf')">star_border</mat-icon> -->
+                <mat-icon >error_outline</mat-icon>
+            </div>
+            </div>
+            </div>
+    </div>
+    
+    <div class="user">
+        <div class="u_icon">
+            
+        </div>
+        <div class="detail">
+            <div class="name">
+                <b>{{previewItem?.name}}</b>
+            </div>
+            <div class="user_type">
+                    {{previewItem?.mail}}
+                </div>
+            </div>
+        </div>
+        <div class="body" [innerHTML]="previewItem?.body">
+        </div>
+        <div class="attachment" *ngFor="let data of previewItem.attachment">
+            <div class="file">
+                <div class="box"></div>
+                <div class="content">
+                    <mat-icon >attach_file</mat-icon>
+                    <span>{{data.name}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="formating_text">
+            <div class="text_area">
+                <textarea row="5"></textarea>
+            </div>
+            <div class="optns">
+                <mat-icon >format_bold</mat-icon>
+                    <mat-icon>format_italic</mat-icon>
+                    <mat-icon>format_underline</mat-icon>
+                    <mat-icon>format_clear</mat-icon>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <mat-icon> format_align_center</mat-icon>
+                    <mat-icon> format_align_left</mat-icon>
+                    <mat-icon> format_align_right</mat-icon>
+            </div>
+        </div>
+
+        <div class="headers">
+            <div class="top_menu">
+             <div class="menu_in">
+                <div class="icons">
+                    <mat-icon >attach_file</mat-icon>
+                    <mat-icon>image</mat-icon>
+                    <mat-icon>more_horiz</mat-icon>
+                </div>
+                </div>
+                </div>
+                
+            <div class="email-text">
+                <button mat-button class="send">
+                    <div class="btn_content">
+                        Send&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <mat-icon>send</mat-icon>
+                </button>
+            </div>
+        </div>
+        
+</div>

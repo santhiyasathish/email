@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    display: flex;
+    .sidenav{
+        width:6%;
+    }
+    .email{
+        width: calc(47% - 20px);
+        padding:10px;
+        background: #f1f6fa;
+        .body_content{
+            width:100%;
+            display: flex;
+            .side_nav{
+                width: calc(40% - 20px);
+                background-color: #ffffff;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                padding: 10px;
+            }
+            .search_list{
+                width: calc(60% - 20px);
+                padding:10px;
+                .search_tab{
+                    width: 100%;
+                }
+                .list{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .priview{
+        width: calc(47% - 20px);
+        padding:10px;
+    }
+}

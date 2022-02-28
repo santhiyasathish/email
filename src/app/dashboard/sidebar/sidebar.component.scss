@@ -1,0 +1,50 @@
+.cont{
+    width: 100%;
+    .logo{
+        width: 40px;
+        height: 40px;
+        background: #FF844B;
+        border-radius: 10px;
+        margin: 20px auto;
+        position: relative;
+        .in{
+            width:50%;
+            margin: auto;
+            display: flex;
+            position: absolute;
+            top: 38%;
+            left: 30%;
+            .or1{
+                width: 24px;
+                height: 12px;
+                background: #FFFFFF;
+                border-radius: 10px;
+            }
+            .or2{
+                width: 24px;
+                height: 12px;
+                
+                /* White */
+                
+                background: #FFFFFF;
+                opacity: 0.5;
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+    }
+    .menu{
+        text-align: center;
+        margin: auto;
+        mat-icon{
+            color:#6F96AA;
+            padding: 10px 0px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .active{
+        mat-icon{
+            color: #FF844B;
+        }
+    }
+}

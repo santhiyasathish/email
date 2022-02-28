@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="email-text">
+        <b>Email</b>
+    </div>
+    <div class="top_menu">
+     <div class="menu_in">
+        <div class="icons">
+            <mat-icon [matBadge]="badges?.message != 0? badges?.announcement : ''">message</mat-icon>
+            <mat-icon [matBadge]="badges?.announcement != 0? badges?.announcement : ''">announcement</mat-icon>
+            <mat-icon>settings</mat-icon>
+        </div>
+        <div class="user">
+            <div class="u_icon">
+                
+            </div>
+            <div class="detail">
+                <div class="name">
+                    <b>{{userDetail?.name}}</b>
+                </div>
+                <div class="user_type">
+                        {{userDetail?.role}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>

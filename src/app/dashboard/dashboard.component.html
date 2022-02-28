@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="sidenav">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="email">
+        <app-header></app-header>
+        <div class="body_content">
+            <div class="side_nav">
+               <app-sidenav [chooseOption]="favItem" (SelectMenu)="SelectMenu($event)"></app-sidenav>
+            </div>
+            <div class="search_list">
+                <div class="search_tab">
+                    <app-search></app-search>
+                </div>
+                <div class="list">
+                    <app-list [list]="list" (listItem)="selectItem($event)"></app-list>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="priview">
+        <app-priview [previewItem]="preview" (actionItem)="actions($event)"></app-priview>
+    </div>
+</div>

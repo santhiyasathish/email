@@ -1,0 +1,29 @@
+<div class="list_view">
+    <div class="card" *ngFor="let data of list" [class]="data.class">
+        <div class="pro_detail" (click)="selectItem(data)">
+            <div class="outline">
+                <div class="u_icon">
+                </div>
+            </div>
+            <div class="detail">
+                <div class="name">
+                    <div class="w-95">
+                        <b>{{data?.name}}</b>
+                    </div>
+                    <div class="w-5">{{data?.hour}}</div>
+                </div>
+                <div class="user_type">
+                    <div class="w-95">{{data?.desc}}</div>
+                    <div class="w-5"><mat-icon class="f-right"> attach_file</mat-icon></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pagination" *ngIf="page.length > 0">
+    <div class="row">
+        <div class="col-1" *ngFor="let data of page">
+            <div class="page" [class.active]="data.number == selected" (click)="selectOption(data.number)">{{data.number}}</div>
+        </div>
+    </div>
+</div>
